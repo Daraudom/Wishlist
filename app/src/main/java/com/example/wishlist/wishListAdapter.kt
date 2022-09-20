@@ -24,10 +24,14 @@ class wishListAdapter (private val mwishlistItems: List<wishlistItems>) : Recycl
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val wishlist =
+        val wishlist = wishlists[itemCount - 1]
+        holder.itemName.text = wishlist.wishlistItem
+        holder.itemPrice.text = wishlist.price.toString()
+        holder.itemLink.text = wishlist.link
     }
 
     override fun getItemCount(): Int {
+        return wishlists.size
     }
 
 }

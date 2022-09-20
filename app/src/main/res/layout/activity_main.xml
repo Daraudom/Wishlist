@@ -14,11 +14,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
         />
 
     <EditText
         android:id="@+id/itemName"
         android:hint="Ex. Christmas Tree"
+        android:background="@color/white"
         android:textSize="13sp"
         android:layout_width="146dp"
         android:layout_height="40dp"
@@ -30,6 +32,7 @@
     <EditText
         android:id="@+id/link"
         android:hint="Ex. https//:link.com"
+        android:background="@color/white"
         android:textSize="10sp"
         android:layout_width="233dp"
         android:layout_height="31dp"
@@ -40,6 +43,7 @@
 
     <EditText
         android:id="@+id/price"
+        android:background="@color/white"
         android:textSize="13sp"
         android:hint="Ex. 10.99"
         android:layout_width="125dp"
@@ -60,4 +64,5 @@
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/link" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
